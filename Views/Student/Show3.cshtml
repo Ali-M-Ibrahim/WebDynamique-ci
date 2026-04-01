@@ -1,0 +1,12 @@
+﻿@{
+    var row = ViewData["student"] as Student;
+}
+
+<h3>@ViewData["Title"]</h3>
+<h4>@ViewData["Date"]</h4>
+
+<ul>
+    <li>Id is: @row.Id</li>
+    <li>First Name is: @row.FirstName</li>
+    <li>Last Name is: @row.LastName</li>
+</ul>

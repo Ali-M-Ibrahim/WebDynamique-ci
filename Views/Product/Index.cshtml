@@ -1,0 +1,54 @@
+﻿@model List<Product>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+            }
+
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+    </style>
+</head>
+<body>
+
+    <h2>Product Table     <a asp-controller="Product" asp-action="Create"> + Create</a></h2>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+      
+        @foreach(var row in @Model)
+            {
+                <tr>
+                <td>@row.Id</td>
+                <td>@row.Name</td>
+                <td>@row.Price</td>
+
+                <td>
+                    <a asp-controller="Product" asp-action="Show" asp-route-id="@row.Id">View</a>
+                    <a asp-controller="Product" asp-action="Edit" asp-route-id=@row.Id">Edit</a>
+                    <a asp-controller="Product" asp-action="Delete" asp-route-id=@row.Id">Delete</a>
+                </td>
+                </tr>
+            }
+        </table>
+
+</body>
+</html>
+

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("USCJCI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acee9df124f1ab400e5f35315ce7a7846002b096")]
 [assembly: System.Reflection.AssemblyProductAttribute("USCJCI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("USCJCI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

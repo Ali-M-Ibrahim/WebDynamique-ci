@@ -1,0 +1,31 @@
+﻿@model Room;
+
+
+<h2>Room information</h2>
+
+<ul>
+    <li>Class ID: @Model.course.Id</li>
+    
+    <li>Class Code: @Model.course.Code</li>
+
+    <li>Class Name: @Model.course.Name</li>
+</ul>
+
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+
+    @foreach (var row in @Model.students)
+    {
+        <tr>
+            <td>@row.Id</td>
+            <td>@row.FirstName</td>
+            <td>@row.LastName</td>
+        </tr>
+    }
+
+</table>

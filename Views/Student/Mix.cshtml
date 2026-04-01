@@ -1,0 +1,17 @@
+﻿@model Course;
+
+<h3>@ViewData["title"]</h3>
+<h3>@ViewData["date"]</h3>
+
+<ul>
+    <li>Course ID: @Model.Id</li>
+    <li>Course Code: @Model.Code</li>
+    <li>Course Name: @Model.Name</li>
+</ul>
+
+
+<ul>
+    <li>Student ID: @ViewBag.student.Id</li>
+    <li>Student First Name: @ViewBag.student.FirstName</li>
+    <li>Student Last Name: @ViewBag.student.LastName</li>
+</ul>
