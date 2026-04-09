@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using USCJCI.Constant
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,7 +57,12 @@
 <body>
 
     <div class="topnav">
-        <a class="active" asp-controller="Product" asp-action="Index" >Product</a>
+
+        @if (User.IsInRole(Roles.Admin))
+            {
+          <a class="active" asp-controller="Product" asp-action="Index" >Product</a>
+
+            }
          
         <a asp-controller="Post" asp-action="Index" >Post</a>
 
